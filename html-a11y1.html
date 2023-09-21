@@ -1,56 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>HTML accessibility: Task 1</title>
-    <style>
-      body {
-        background-color: #fff;
-        color: #333;
-        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-        padding: 1em;
-        margin: 0;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
+<head>
+  <meta meta charset="utf-8" />
+  <meta name="viewport" content="width-device width, initial-scale 1.0">
+  <title>HTML accessibility: Task 1</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
 
-      .button {
-        color: white;
-        background-color: blue;
-        border-radius: 10px;
-        width: 170px;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
+    * {
+      box-sizing: border-box;
+    }
 
-  <body>
+    .button {
+      color: white;
+      background-color: rgb(8, 104, 133);
+      border-radius: 10px;
+      width: 170px;
+      padding: 10px;
+      text-align: center;
+    
+    }
 
-    <font size="7">Need help?</font>
-    <br><br>
-    If you have any problems with our products, our  support center can offer you all the help you need, whether you want:
-    <br><br>
-    1. Advice choosing a new product
-    <br>
-    2. Tech support on an existing product
-    <br>
-    3. Refund and cancellation assistance
-    <br><br>
-    <font size="5">Contact us now</font>
-    <br><br>
-    Our help center contains live chat, e-mail addresses, and phone numbers.
-    <br><br>
-    <div class="button">Find Contact Details</div>
-    <br>
-    <font size="5">Find out answers</font>
-    <br><br>
-    Our Forums section contains a large knowledge base of searchable previously asked questions, and you can always ask a new question if you can't find the answer you're looking for.
-    <br><br>
-    <div class="button">Access Forums</div>
+    .button {
+      color: rgb(242, 241, 247)
+    }
 
-  </body>
+    .button:active {
+      color: red;
+      background-color: white;
+    }
+
+    .button:hover .button:visited .button:focus {
+      color: #0f178c;
+      text-decoration: none;
+    }
+    .button {
+      text: bold, 1em;
+    }
+
+    .h1 {
+      font-size: 7em;
+    }
+
+    .h2 {
+      font-size: 5em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    <class="h1">
+      </class>Need help?
+  </h1>
+
+  <p>If you have any problems with our products, our support center can offer you all the help you need, whether you
+    want:
+  </p>
+
+  <ol>
+    <li> Advice choosing a new product</li>
+    <li> Tech support on an existing product</li>
+    <li> Refund and cancellation assistance</li>
+  </ol>
+
+  <h2>
+    <class="h2>
+      </class>Contact us now
+  </h2>
+
+  <p>Our help center contains live chat, e-mail addresses, and phone numbers.
+  </p>
+
+  <p>
+    <button class="button" data-message="Find Contact Details">Find Contact Details
+    </button>
+  </p>
+  <h2>Find out answers</h2>
+
+  <p>
+    Our Forums section contains a large knowledge base of searchable previously asked questions, and you can always ask
+    a new question if you can't find the answer you're looking for.
+  </p>
+  <p>
+    <button class="button" data-message="Access Forums">Access Forums
+    </button>
+  </p>
+</body>
 
 </html>
