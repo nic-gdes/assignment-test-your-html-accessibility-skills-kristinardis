@@ -57,7 +57,6 @@
 
 <body>
   <h1>
-    <class="h1">
       </class>Need help?
   </h1>
 
@@ -72,16 +71,16 @@
   </ol>
 
   <h2>
-    <class="h2>
       </class>Contact us now
   </h2>
+<!--   There was an unnecessary <class> with the H1 and H2, which doesn't belong. You may have meant to add the class to the heading elements? It's not needed in the context of this assignment though. -->
 
   <p>Our help center contains live chat, e-mail addresses, and phone numbers.
   </p>
 
   <p>
-    <button class="button" data-message="Find Contact Details">Find Contact Details
-    </button>
+    <a href="#" class="button">Find Contact Details
+    </a>
   </p>
   <h2>Find out answers</h2>
 
@@ -90,8 +89,9 @@
     a new question if you can't find the answer you're looking for.
   </p>
   <p>
-    <button class="button" data-message="Access Forums">Access Forums
-    </button>
+    <a href="#" class="button">Access Forums
+    </a>
+<!--     For these "buttons" what we're actually trying to do is link a user to another page. So we want to use the anchor <a> element with an href attribute, which we can then style as a button. -->
   </p>
 </body>
 
